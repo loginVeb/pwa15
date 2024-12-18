@@ -1,4 +1,4 @@
-
+import { generateViewport } from './viewport';
 import "./globals.css";
 
 
@@ -6,9 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: 'My awesome PWA app',
   description: 'Best PWA app in the world!',
-  viewport: 'width=device-width,initial-scale=1',
   favicon: '/favicon.ico',
-  themeColor: '#ffffff',
   appleTouchIcons: [
     { sizes: "180x180", href: "/ios/180.png" },
     { sizes: "192x192", href: "/ios/192.png" },
@@ -149,6 +147,7 @@ export const metadata = {
   ],
 };
 
+export const viewport = generateViewport();
 export default function RootLayout({ children }) {
   return (
   
