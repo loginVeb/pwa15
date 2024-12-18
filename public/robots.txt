@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Viewport: width=device-width, initial-scale=1
+Theme-color: #ffffff

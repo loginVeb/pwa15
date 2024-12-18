@@ -14,6 +14,7 @@ export default function Home() {
 // OneDrive/'Рабочий стол'/
 
 // npm run dev
+// rm -rf .next
 // npm run dev --pwa
 // git add ./
 // git commit -am '
