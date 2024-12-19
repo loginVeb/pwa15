@@ -109,6 +109,28 @@ export const metadata = {
     { sizes: "96x96", href: "/windows11/Square44x44Logo.altform-unplated_targetsize-96.png" },
     { sizes: "256x256", href: "/windows11/Square44x44Logo.altform-unplated_targetsize-256.png" },
   ],
+ screenshots: [
+  {
+    src: "/screenshots/wide_screenshot_1.png",
+    type: "image/png",
+    platform: "wide",
+    sizes: "1200x800"
+  },
+  {
+    src: "/screenshots/wide_screenshot_2.png",
+    type: "image/png",
+    platform: "wide",
+    sizes: "2560x1600",
+    form_factor: "wide"
+  },
+  {
+    src: "/screenshots/wide_screenshot_3.png",
+    type: "image/png",
+    platform: "wide",
+    sizes: "1920x1200",
+    form_factor: "wide"
+  }
+],
   manifest: "/manifest.json",
   twitterCard: "summary",
   twitterUrl: "https://yourdomain.com",

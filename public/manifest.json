@@ -1,7 +1,31 @@
 {
-    "name": "My awesome PWA app",
-    "short_name": "PWA App",
-   "icons": [
+  "name": "My awesome PWA app",
+  "short_name": "PWA App",
+
+ "screenshots": [
+  {
+    "src": "/screenshots/wide_screenshot_1.png",
+    "type": "image/png",
+    "platform": "wide",
+    "sizes": "1200x800"
+  },
+  {
+    "src": "/screenshots/wide_screenshot_2.png",
+    "type": "image/png",
+    "platform": "wide",
+    "sizes": "2560x1600",
+    "form_factor": "wide"
+  },
+  {
+    "src": "/screenshots/wide_screenshot_3.png",
+    "type": "image/png",
+    "platform": "wide",
+    "sizes": "1920x1200",
+    "form_factor": "wide"
+  }
+],
+
+  "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -451,9 +475,9 @@
       "sizes": "1024x1024"
     }
   ],
-    "theme_color": "#FFFFFF",
-    "background_color": "#FFFFFF",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "portrait"
-  }
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
