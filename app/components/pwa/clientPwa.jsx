@@ -3,17 +3,15 @@ import { useEffect } from 'react';
 
 function ClientPwa() {
   useEffect(() => {
-    const installPromptHandler = (event) => {
+    const handleBeforeInstallPrompt = (event) => {
       event.preventDefault();
-      // Показываем пользователю диалоговое окно для установки
-      event.prompt();
-      return false;
+      event.showInstallPrompt();
     };
 
-    window.addEventListener('beforeinstallprompt', installPromptHandler);
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', installPromptHandler);
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
     };
   }, []);
 

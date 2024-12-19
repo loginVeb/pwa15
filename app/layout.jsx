@@ -7,6 +7,21 @@ export const metadata = {
   title: 'My awesome PWA app',
   description: 'Best PWA app in the world!',
   favicon: '/favicon.ico',
+  manifest: "/manifest.json",
+  twitterCard: "summary",
+  twitterUrl: "https://yourdomain.com",
+  twitterTitle: "My awesome PWA app",
+  twitterDescription: "Best PWA app in the world!",
+  twitterImage: "/icons/twitter.png",
+  twitterCreator: "@DavidWShadow",
+  ogType: "website",
+  ogTitle: "My awesome PWA app",
+  ogDescription: "Best PWA app in the world!",
+  ogSiteName: "My awesome PWA app",
+  ogUrl: "https://yourdomain.com",
+  ogImage: "/icons/og.png",
+  // viewport: generateViewport(),
+
   appleTouchIcons: [
     { sizes: "180x180", href: "/ios/180.png" },
     { sizes: "192x192", href: "/ios/192.png" },
@@ -109,41 +124,28 @@ export const metadata = {
     { sizes: "96x96", href: "/windows11/Square44x44Logo.altform-unplated_targetsize-96.png" },
     { sizes: "256x256", href: "/windows11/Square44x44Logo.altform-unplated_targetsize-256.png" },
   ],
- screenshots: [
-  {
-    src: "/screenshots/wide_screenshot_1.png",
-    type: "image/png",
-    platform: "wide",
-    sizes: "1200x800"
-  },
-  {
-    src: "/screenshots/wide_screenshot_2.png",
-    type: "image/png",
-    platform: "wide",
-    sizes: "2560x1600",
-    form_factor: "wide"
-  },
-  {
-    src: "/screenshots/wide_screenshot_3.png",
-    type: "image/png",
-    platform: "wide",
-    sizes: "1920x1200",
-    form_factor: "wide"
-  }
-],
-  manifest: "/manifest.json",
-  twitterCard: "summary",
-  twitterUrl: "https://yourdomain.com",
-  twitterTitle: "My awesome PWA app",
-  twitterDescription: "Best PWA app in the world!",
-  twitterImage: "/icons/twitter.png",
-  twitterCreator: "@DavidWShadow",
-  ogType: "website",
-  ogTitle: "My awesome PWA app",
-  ogDescription: "Best PWA app in the world!",
-  ogSiteName: "My awesome PWA app",
-  ogUrl: "https://yourdomain.com",
-  ogImage: "/icons/og.png",
+  screenshots: [
+    {
+      src: "/screenshots/wide_screenshot_1.png",
+      type: "image/png",
+      platform: "wide",
+      sizes: "1200x800"
+    },
+    {
+      src: "/screenshots/wide_screenshot_2.png",
+      type: "image/png",
+      platform: "wide",
+      sizes: "2560x1600",
+      form_factor: "wide"
+    },
+    {
+      src: "/screenshots/wide_screenshot_3.png",
+      type: "image/png",
+      platform: "wide",
+      sizes: "1920x1200",
+      form_factor: "wide"
+    }
+  ],
   appleStartupImages: [
     { sizes: "2048x2732", href: "/icons/iPhone_16_Pro_Max_landscape.png" },
     { sizes: "1668x2224", href: "/icons/iPhone_16_Pro_landscape.png" },
@@ -172,18 +174,18 @@ export const metadata = {
 export const viewport = generateViewport();
 export default function RootLayout({ children }) {
   return (
-  
+
     <html lang="en" suppressHydrationWarning>
-    <head>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="My awesome PWA app" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="apple-touch-icon" href="/ios/180.png" />
-</head>
+      <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="My awesome PWA app" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="apple-touch-icon" href="/ios/180.png" />
+      </head>
       <body >
         {children}
       </body>
     </html>
-  
+
   );
 }
