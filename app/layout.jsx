@@ -4,7 +4,6 @@ import "./globals.css";
 
 
 export const metadata = {
-  // viewport: generateViewport(),
   title: 'My awesome PWA app',
   description: 'Best PWA app in the world!',
   favicon: '/favicon.ico',
@@ -175,6 +174,12 @@ export default function RootLayout({ children }) {
   return (
   
     <html lang="en" suppressHydrationWarning>
+    <head>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="My awesome PWA app" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/ios/180.png" />
+</head>
       <body >
         {children}
       </body>
