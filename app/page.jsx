@@ -1,11 +1,14 @@
 
 import styles from "./page.module.css";
+import ClientPwa from "./components/pwa/clientPwa";
 
 export default function Home() {
   return (
     <div className={styles.mainPageDiv}>
      5555555555
-    </div>
+     {/* {typeof window !== 'undefined' && <PwaInstaller />} */}
+     <ClientPwa /> 
+     </div>
   );
 }
 // contr+shift+p settings настройки

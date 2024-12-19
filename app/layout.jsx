@@ -4,6 +4,7 @@ import "./globals.css";
 
 
 export const metadata = {
+  // viewport: generateViewport(),
   title: 'My awesome PWA app',
   description: 'Best PWA app in the world!',
   favicon: '/favicon.ico',
@@ -166,7 +167,7 @@ export const metadata = {
     { sizes: "810x1080", href: "/icons/10.2__iPad_landscape.png" },
     { sizes: "768x1024", href: "/icons/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png" },
     { sizes: "744x1133", href: "/icons/8.3__iPad_Mini_landscape.png" },
-  ],
+  ]
 };
 
 export const viewport = generateViewport();
